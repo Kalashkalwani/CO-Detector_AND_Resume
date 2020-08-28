@@ -1,0 +1,136 @@
+
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+
+
+
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"> <form  method="POST">
+  <div class="form-group">
+    <label for="fever">Enter fever value</label>
+    <input type="number" class="form-control" id="fever" name="fever" min="90" max="105" placeholder="enter fever value">
+  </div>
+
+         <div class="form-group">
+    <label for="Age">Enter Age of paitent</label>
+    <input type="number" class="form-control" id="Age" name="Age" min="1" max="150" placeholder="enter AGE">
+  </div>
+
+  <div class="form-group">
+    <label for="bodypain">BODY PAIN</label>
+    <select class="custom-select" name="bodypain" id="bodypain">
+      <option value="1">yes</option>
+      <option value="0">no</option>
+
+    </select>
+  </div>
+
+
+  <div class="form-group">
+    <label for="runnynose">RUNNY_NOSE</label>
+    <select class="custom-select" name="runnynose" id="runnynose">
+      <option value="1">yes</option>
+      <option value="0">no</option>
+
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="diffBreath">Breathing Difficulty</label>
+    <select  class="custom-select" name="diffBreath" id="diffBreath">
+      <option value="-1">No difficulty</option>
+      <option value="0">Little difficulty</option>
+      <option value="1">Sever difficulty</option>
+
+    </select>
+  </div>
+  <div class="col-auto" style="text-align:center">
+      <button class="btn btn-primary btn-learn" type="submit" >Submit</button>
+    </div>
+</form></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>CO-Detector</h4>
+                            <br>
+                            <p class="text-black-50 mb-0">Enter your details for check the percentage of having Covid -19</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+
+               <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="static\assets\img\covid-19.png" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Most common symptoms:</h4>
+                                    <p class="mb-0 text-white-50">
+                                        <ul class="mb-0 text-white-50">
+                                    <li>fever</li>
+                                    <li>dry cough</li>
+                                    <li>tiredness</li></ul>
+                                    </p>
+
+
+                                    <h4 class="text-white">Less common symptoms:</h4>
+                                    <p class="mb-0 text-white-50">
+                                        <ul class="mb-0 text-white-50">
+                                    <li>aches and pains</li>
+                                        <li>sore throat</li>
+                                        <li>diarrhoea</li>
+                                        <li>conjunctivitis</li>
+                                        <li>headache</li>
+                                        <li>loss of taste or smell</li>
+                                         <li>a rash on skin, or discolouration of fingers or toes</li></ul>
+                                    </p>
+
+
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="static\assets\img\corona.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"> Protect yourself and others from the spread COVID-19</a></h4>
+                                    <p class="mb-0 text-white-50">
+                                       <ul class="mb-0 text-white-50">
+                                            <li>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water</li>
+                                            <li>Maintain at least 2 metre (6 feet) distance between yourself and others</li>
+                                            <li>Avoid touching eyes, nose and mouth.</li>
+                                            <li>If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority.</li>
+
+                                        </ul>
+                                    </p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Signup-->
+
+
+{% endblock %}
